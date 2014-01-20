@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magecracker_Restrictpage>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Magecracker_Restrictpage>
+    </modules>
+</config>
