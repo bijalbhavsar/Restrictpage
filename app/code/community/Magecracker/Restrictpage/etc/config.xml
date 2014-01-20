@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Magecracker_Restrictpage>
+            <version>0.1.0</version>
+        </Magecracker_Restrictpage>
+    </modules>
+    <global>
+     <models>
+            <restrictpage>
+                <class>Magecracker_Restrictpage_Model</class> 
+            </restrictpage>
+     </models>
+       <events>
+            <controller_action_layout_load_before> 
+                <observers>
+                    <restrictpage>
+                        <class>Magecracker_Restrictpage_Model_Observer</class>
+                        <method>changeHomepageContent</method>
+                    </restrictpage> 
+                </observers>
+            </controller_action_layout_load_before>
+        </events>
+    </global>
+</config>
